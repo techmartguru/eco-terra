@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+
+
+    stages {
+        stage('Provision-ecr') {
+            steps {
+                
+		sh "terraform init -input=true"
+                sh "terraform plan -input=true"
+		sh "terraform apply -input=true "
+            }
+        }
+}
+}
