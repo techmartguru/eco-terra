@@ -17,7 +17,6 @@ variable "aws_secret_key" {
 variable "name" {
   description = "(Required) Name of the repository"
   type        = "string"
-  default     =  jenkins-jags
 }
 
 variable "create" {
@@ -28,7 +27,6 @@ variable "create" {
 variable "repository" {
   description = "(Required) Name of the repository to apply the policy"
   type        = "string"
-  default     =  jenkins-jags
 }
 
 variable "policy" {
