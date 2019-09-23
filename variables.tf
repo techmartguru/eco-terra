@@ -5,11 +5,13 @@ variable "aws_region" {
 
 variable "aws_access_key" {
     type  = "string"
+   default = ""
     description = "Access key"
 }
 
 variable "aws_secret_key" {
       type   = "string"
+   default = ""
     description = "Secret Key"
 }
 
